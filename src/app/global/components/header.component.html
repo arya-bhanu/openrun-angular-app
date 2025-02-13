@@ -1,5 +1,20 @@
-<header class="container">
-  <div>
-    <a routerLink="/">Hello Home</a>
+<header class="shadow-md fixed inset-x-0 h-20 flex items-center z-50 bg-white">
+  <div class="container flex items-center justify-between">
+    <a routerLink="/" class="inline-block">
+      <div class="flex items-center">
+        <img ngSrc="/assets/logo.png" priority width="60" height="60" />
+        <h1 class="tracking-widest text-lg font-semibold">Open Run</h1>
+      </div>
+    </a>
+
+    <p-menubar [model]="items">
+      <ng-template pTemplate="item" let-item>
+        <ng-container ngIf="item.items">
+          <a class="p-menuitem-link" [routerLink]="item.route">{{
+            item.label
+          }}</a>
+        </ng-container>
+      </ng-template>
+    </p-menubar>
   </div>
 </header>

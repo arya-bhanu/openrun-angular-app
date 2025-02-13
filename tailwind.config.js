@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      fontFamily: {
+        open: ["Open Sans", ...defaultTheme.fontFamily.sans],
+      },
       container: {
         center: true,
         padding: {
