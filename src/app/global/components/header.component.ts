@@ -8,7 +8,7 @@ import { HeaderService } from './header.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrl: './header.styles.css',
+  styleUrl: './header.component.css',
   imports: [RouterLink, NgOptimizedImage, MenubarModule],
   providers: [HeaderService],
   standalone: true,

@@ -1,0 +1,16 @@
+.goingDown {
+  animation-name: animateDown;
+  animation-timing-function: ease-in-out;
+  animation-duration: 700ms;
+}
+
+@keyframes animateDown {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

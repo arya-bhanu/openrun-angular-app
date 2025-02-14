@@ -1,0 +1,29 @@
+.enterLeft {
+  animation-name: enterL;
+  animation-timing-function: ease-in-out;
+  animation-duration: 400ms;
+}
+
+.outLeft {
+  animation-name: outL;
+  animation-timing-function: ease-in-out;
+  animation-duration: 400ms;
+}
+
+@keyframes enterL {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes outL {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-999px);
+  }
+}
